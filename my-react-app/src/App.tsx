@@ -5,10 +5,6 @@ function App() {
   return (
     <section>
       <PokemonCard />
-      <PokemonCard />
-      <PokemonCard />
-      <PokemonCard />
-      <PokemonCard />
     </section>
   );
 }
