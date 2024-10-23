@@ -1,14 +1,22 @@
-const PokemonCard = ({ pokemon }) => {
-  return (
-    <div className="pokemon-card">
-      <h2>{pokemon?.name || "Unknown Pokémon"}</h2>
-      {pokemon?.imgSrc ? (
-        <img src={pokemon.imgSrc} alt={pokemon.name} />
-      ) : (
-        <p>???</p>
-      )}
-    </div>
-  );
-};
 
-export default PokemonCard;
+
+function PokemonCard({pokemon}) {
+
+const imgAvailable = pokemon.imgSrc;
+
+  return (
+    imgAvailable ? (
+      <figure>
+        <img src={pokemon.imgSrc} alt={pokemon.name}/>
+        <figcaption>{pokemon.name}</figcaption>
+      </figure>
+    ) : (
+      <figure>
+        <p>???</p>
+        <figcaption>{pokemon.name}</figcaption>
+      </figure>
+    )
+  );
+}
+
+export default PokemonCard 

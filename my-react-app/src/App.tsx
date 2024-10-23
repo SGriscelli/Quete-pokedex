@@ -1,5 +1,5 @@
 import "./App.css";
-import PokemonCard from "./components/PokemonCard";
+import PokemonCard from "./components/PokemonCard.tsx";
 
 const pokemonList = [
   {
@@ -9,16 +9,14 @@ const pokemonList = [
   },
   {
     name: "Mew",
-    imgSrc: "", // Missing image
   },
 ];
 
-function App() {
+
+function App(pokemon) {
   return (
     <section>
-      {pokemonList.map((pokemon, index) => (
-        <PokemonCard key={index} pokemon={pokemon} />
-      ))}
+      <PokemonCard pokemon={pokemonList[0]} />
     </section>
   );
 }
