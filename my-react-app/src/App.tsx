@@ -1,7 +1,11 @@
 import "./App.css";
 import PokemonCard from "./components/PokemonCard.tsx";
 
-const pokemonList = [
+
+
+
+function App() {
+  const pokemonList = [
   {
     name: "Bulbasaur",
     imgSrc:
@@ -11,14 +15,12 @@ const pokemonList = [
     name: "Mew",
   },
 ];
-
-
-function App(pokemon) {
   return (
     <section>
-      <PokemonCard pokemon={pokemonList[0]} />
+      <div>
+      <PokemonCard pokemon={pokemonList[1]} />
+      </div> 
     </section>
   );
 }
-
 export default App;
