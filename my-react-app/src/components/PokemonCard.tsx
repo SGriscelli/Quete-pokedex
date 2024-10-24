@@ -20,3 +20,4 @@ function PokemonCard({ pokemon }: { pokemon: PokemonProps }) {
 }
 
 export default PokemonCard;
+export type { PokemonProps } 
