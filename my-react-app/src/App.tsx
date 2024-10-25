@@ -1,6 +1,6 @@
 import "./App.css";
 import PokemonCard from "./components/PokemonCard.tsx";
-import NavBar from "./components/Navbar.tsx";
+import NavBar from "./components/NavBar.tsx";
 import { useState } from "react";
 
 const pokemonList = [
